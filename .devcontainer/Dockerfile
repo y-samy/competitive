@@ -1,7 +1,5 @@
-FROM mcr.microsoft.com/devcontainers/base:jammy
+FROM mcr.microsoft.com/devcontainers/base:noble
 
 RUN apt update \ 
   && apt install -y \
-  gdb \
-  lua5.4 \
-  dotnet6
+  gdb
