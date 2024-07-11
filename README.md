@@ -1,28 +1,12 @@
 
 # competitive
 
-ganyariya's competitive repository with VSCode devContainer
+ganyariya's competitive repository with VSCode devContainer adapted for my own use.
 
 ### Languages
 
 - c++
-- c#
-- go
 - python
-- lua
-
-# Setup
-
-```bash
-gh repo clone ganyariya/competitive
-# or 
-git clone https://github.com/ganyariya/competitive.git
-```
-
-- Install & Setup `Docker Desktop`
-- Open `ganyariya/competitive` directory with VSCode
-- Open VSCode CommandPalette and select `Dev containers: Reopen in Container`
-  - Automatically create & launch a devcontainer
 
 # How to use
 
