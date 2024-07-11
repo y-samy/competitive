@@ -1,0 +1,32 @@
+{
+	"Base I/O": {
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"int main()",
+			"{",
+			"\tios::sync_with_stdio(0); cin.tie(0);",
+			"\tint x; cin >> x;",
+			"\t$0cout << x << endl;",
+			"\treturn 0;",
+			"}"
+		],
+		"scope" : "cpp"
+	},
+	"Base I/O w/ Testcases": {
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"int main()",
+			"{",
+			"\tios::sync_with_stdio(0); cin.tie(0);",
+			"\tint t; cin >> t;",
+			"\twhile(t--){",
+			"\t\t$0",
+			"\t}",
+			"return 0;",
+			"}"
+		],
+		"scope" : "cpp"
+	}
+}
