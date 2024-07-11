@@ -1,25 +1,26 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "competitive-devcontainer",
-	// ubuntu with gcc
+	"name": "competitive",
 	"dockerFile": "Dockerfile",
-	"features": {
-		"ghcr.io/devcontainers/features/go:1": {},
-		"ghcr.io/devcontainers/features/python:1": {},
-		"ghcr.io/devcontainers/features/node:1": {}
-	},
+	"mounts": [
+		"source=${env:HOME}/Projects/repo/local/codeforces/,target=/workspaces/competitive/codeforces,type=bind,consistency=cached"
+	],
+	"runArgs": [
+		"--name",
+		"competitive"
+	],
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"DivyanshuAgrawal.competitive-programming-helper",
 				"ms-vscode.cpptools",
-				"formulahendry.code-runner",
-				"sumneko.lua",
-				"actboy168.lua-debug",
-				"ms-dotnettools.csharp"
+				"formulahendry.code-runner",	
+				"ms-vscode.cpptools-extension-pack",
+				"ms-python.vscode-pylance",
+				"ms-python.python",
+				"ms-python.debugpy"
 			]
 		}
-	},
-	// luabundler
-	"postCreateCommand": "npm install -g luabundler"
+	}
 }
