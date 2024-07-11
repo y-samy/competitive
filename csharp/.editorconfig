@@ -1,2 +1,0 @@
-[*.{cs,vb}]
-dotnet_diagnostic.CS8602.severity = none
