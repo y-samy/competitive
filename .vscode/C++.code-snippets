@@ -1,13 +1,19 @@
 {
 	"Base I/O": {
 		"body": [
+			"#ifdef __GNUG__",
 			"#include <bits/stdc++.h>",
+			"#endif",
+			"#ifdef _WIN32",
+			"#include <__msvc_all_public_headers.hpp>",
+			"#endif",
 			"using namespace std;",
 			"int main()",
 			"{",
 			"\tios::sync_with_stdio(0); cin.tie(0);",
 			"\tint x; cin >> x;",
-			"\t$0cout << x << endl;",
+			"\tcout << x << endl;",
+			"\t$0",
 			"\treturn 0;",
 			"}"
 		],
@@ -15,7 +21,12 @@
 	},
 	"Base I/O w/ Testcases": {
 		"body": [
+			"#ifdef __GNUG__",
 			"#include <bits/stdc++.h>",
+			"#endif",
+			"#ifdef _WIN32",
+			"#include <__msvc_all_public_headers.hpp>",
+			"#endif",
 			"using namespace std;",
 			"int main()",
 			"{",
@@ -24,7 +35,7 @@
 			"\twhile(t--){",
 			"\t\t$0",
 			"\t}",
-			"return 0;",
+			"\treturn 0;",
 			"}"
 		],
 		"scope" : "cpp"
