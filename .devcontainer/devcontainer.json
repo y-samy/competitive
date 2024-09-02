@@ -10,17 +10,25 @@
 		"--name",
 		"competitive"
 	],
+	"features": {
+		"ghcr.io/devcontainers/features/go:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "latest"
+		},
+		"ghcr.io/veronoicc/devcontainer-features/luajit-2.1.0-beta3:1": {}
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"DivyanshuAgrawal.competitive-programming-helper",
 				"ms-vscode.cpptools",
-				"formulahendry.code-runner",	
 				"ms-vscode.cpptools-extension-pack",
 				"ms-python.vscode-pylance",
 				"ms-python.python",
 				"ms-python.debugpy"
 			]
 		}
-	}
+	
 }
